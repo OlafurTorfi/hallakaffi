@@ -1,0 +1,4 @@
+{
+    "getCustomers":"select lysing, notandiid, sum(hreyfing) stada from notendur join utsjoppa on userid = notandiid where tegund='STM' group by lysing, notandiid",
+    "getUsers":"select a.lysing, a.notandiid from notendur a left outer join utsjoppa b on b.userid = a.notandiid where b.userid is null"
+}

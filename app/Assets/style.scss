@@ -1,0 +1,59 @@
+@import url('//fonts.googleapis.com/css?family=Roboto');
+@import '../../node_modules/purecss/build/base-min.css';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.tm-button, .gera-upp-button, .nyr-notandi{
+    color: white;
+    border-radius: 0px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px black;
+}
+.tm-button {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background: green;
+    margin: 5px 0px 5px 20px;
+    width: 65%;
+}
+.gera-upp-button {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin: 5px 10px 5px 0px;
+    width: 25%;
+    background: blue;
+}
+.nyr-notandi {
+    padding: 20px 5px;
+    background-color: red;
+    height:100px;
+    width:150px;
+    /*overflow:hidden;*/
+    font-size: 40px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    z-index:10;
+}
+.banner {
+    height:100px;
+    width:100%;
+    text-align: left;
+    background-image: url('/Assets/candycanes.jpg');
+}
+.banner-title {
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 5px 5px red;
+    width: 80%;
+}
