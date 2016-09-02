@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import candycanes from '../Assets/candycanes.jpg';
-import faviconUrl from '../Assets/favicon.ico';
 
 class Layout extends Component {
   render() {
@@ -10,8 +9,7 @@ class Layout extends Component {
     return (
       <div>
         <div className='banner'>
-            <span className='banner-title' style={divStyle}>Greiðsluþjónusta Hallakaffis</span>
-            <img url={faviconUrl}/>
+            <span className='banner-title' style={divStyle}>Greidðsluþjónusta Hallakaffis</span>
         </div>
         {this.props.children}
       </div>
