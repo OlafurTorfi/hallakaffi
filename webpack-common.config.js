@@ -1,3 +1,4 @@
+'use strict';
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -39,4 +40,4 @@ module.exports = {
                           filename: 'index.html',
                           template: './app/index_template.html'
                         })
-}
+};

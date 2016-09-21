@@ -1,13 +1,15 @@
+'use strict';
 var commonConfig = require('./webpack-common.config.js');
+var webpack = require('webpack');
 
 var devLoaders = [
   // javascript/jsx loader - https://www.npmjs.com/package/babel-loader - with the react-hot loader
   {
     test: /\.jsx?$/,
     exclude: /node_modules/,
-    loaders: ['react-hot', 'babel-loader?stage=0&optional=runtime'],
+    loaders: ['react-hot-loader/webpack', 'babel-loader?stage=0&optional=runtime'],
   }
-]
+];
 
 module.exports = {
   entry: [
@@ -32,6 +34,7 @@ module.exports = {
     loaders: commonConfig.loaders.concat(devLoaders)
   },
   plugins: [
-    commonConfig.indexPagePlugin
+    commonConfig.indexPagePlugin,
+    new webpack.HotModuleReplacementPlugin()
   ],
 };
